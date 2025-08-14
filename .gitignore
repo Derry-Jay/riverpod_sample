@@ -8,18 +8,17 @@
 .buildlog/
 .history
 .svn/
-migrate_working_dir/
 
 # IntelliJ related
 *.iml
 *.ipr
 *.iws
-.idea/
+**/local.properties
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-#.vscode/
+settings.json
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -31,6 +30,13 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+pubspec.lock
+GeneratedPluginRegistrant.*
+.fvm
+
+# Web related
+**/generated_plugin_registrant.*
+**/.firebase
 
 # Symbolication related
 app.*.symbols
@@ -38,7 +44,4 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+.fake

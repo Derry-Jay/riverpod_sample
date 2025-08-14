@@ -1,6 +1,5 @@
+import 'package:common_utils/common_utils.dart';
 import 'package:flutter/material.dart';
-
-import '../modules/common/models/shade.dart';
 
 class Shades {
   static final Shades _singleton = Shades._internal();
@@ -9,7 +8,7 @@ class Shades {
 
   Shades._internal();
 
-  final kGrey = Colors.grey, kGrey1 = Shade(1, 'grey').fromConfigs;
-
-  final kGold1 = Shade(1, 'gold').fromConfigs;
+  final kGrey = Colors.grey,
+      kGrey1 = Shade(1, 'grey').fromConfigs,
+      kGold1 = Shade(1, 'gold').fromConfigs;
 }
